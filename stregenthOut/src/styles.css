@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .profile-section, .summary-section, .additional-sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    text-align: center;
+  }
+  
+  .profile-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .video-section video {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .summary-of-cv, .technical-skills, .projects-section, .strengths-section, .checkbox-section {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .summary-of-cv, .technical-skills {
+    margin-bottom: 20px;
+  }
+  
+  .additional-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .projects-section ul, .strengths-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .projects-section ul li, .strengths-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .projects-section ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .projects-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .checkbox-section label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
