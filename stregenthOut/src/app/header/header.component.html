@@ -1,16 +1,27 @@
-<nav class="navbar">
-    <div class="logo">IsignTech Logo</div>
-    <div class="title">STREGENTHOUT</div>
-    <ul class="nav-links">
-      <li><a routerLink="/home">Home</a></li>
-      <li><a href="#">Career</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li>+91 90xxxxxxxx</li>
-    </ul>
-    <div class="profile-icon">
-      <img src="assets/profile-icon.png" alt="Profile Icon">
-      PROFILE
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold " href="#">Strengthout.com</a>
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text"> <!-- Added ms-auto class for right alignment -->
+          <li class="nav-item" (click)="activeLink = 'home'">
+            <a class="nav-link" [class.active]="activeLink === 'home'" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item" (click)="activeLink = 'about'">
+            <a class="nav-link" [class.active]="activeLink === 'about'" routerLink="/about">About</a>
+          </li>
+          <li class="nav-item" (click)="activeLink = 'services'">
+            <a class="nav-link" [class.active]="activeLink === 'services'" href="#">Services</a>
+          </li>
+          <li class="nav-item" (click)="activeLink = 'contact'">
+            <a class="nav-link" [class.active]="activeLink === 'contact'" href="#">Contact</a>
+          </li>
+          <li><a class="nav-link" [class.active]="activeLink === 'contact'" href="#"> Profile <img src="assets/profile-icon.png" ></a></li>
+        </ul>
+      </div>
     </div>
+    
   </nav>
-  
