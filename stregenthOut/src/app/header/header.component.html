@@ -1,7 +1,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-success">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold " href="#">Strengthout.com</a>
+      <a class="navbar-brand fw-bold  " href="#">Strengthout.com</a>
       <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -12,6 +12,9 @@
           </li>
           <li class="nav-item" (click)="activeLink = 'about'">
             <a class="nav-link" [class.active]="activeLink === 'about'" routerLink="/about">About</a>
+          </li>
+          <li class="nav-item" (click)="activeLink = 'carrer'">
+            <a class="nav-link" [class.active]="activeLink === 'carrer'" href="#">Carrers</a>
           </li>
           <li class="nav-item" (click)="activeLink = 'services'">
             <a class="nav-link" [class.active]="activeLink === 'services'" href="#">Services</a>

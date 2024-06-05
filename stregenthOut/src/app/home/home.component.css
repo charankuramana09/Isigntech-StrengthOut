@@ -7,11 +7,29 @@
   }
   .grid-container {
     transition: all 0.3s ease;
+    background-color:black;
+    padding: 5px;
+    h2{
+      color: #83BB54
+    }
   }
   
   .grid-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    background-color: rgba(62, 177, 62, 0.784);
+    background-color: #c79b2b;
+    h2{
+      color: #000;
+      font-weight: 900;
+    }
   }
-  
+  .profile-left{
+    background-color:rgba(208, 243, 216, 0.812);
+  }
+  .bg-green {
+  background-color: #83BB54;
+}
+
+.bg-dark {
+  background-color: #121518;
+}
